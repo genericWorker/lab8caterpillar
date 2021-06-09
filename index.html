@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: The changing caterpillar</title>
+        <style>
+            .result {
+                font-size: 20px;
+                font-weight: bold;
+                color: blue;
+            }
+            .butterfly {
+                background-color: yellow;
+                display: inline-block; 
+                font-family: sans-serif;
+            }
+        </style>
+
+        </head>
+    <body>
+    <h1>The Caterpillar</h1>
+    
+    <p id='p1'>This is a <strong>caterpillar</strong> in its natural habitat:</p>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Monarch_caterpillar_on_swan_plant_branchlet.jpg/640px-Monarch_caterpillar_on_swan_plant_branchlet.jpg" width="400">
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Catepillar">Caterpillar</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $("title").text( 'Challenge: The changing butterfly' );
+         $( "h1" ).text( "The butterfly" );
+         $( "#p1" ).html( "This is a <strong>butterfly</strong> in its natural habitat:" );
+         $( "h2" ).addClass('butterfly');
+         /*   $("a").attr("href", "https://en.wikipedia.org/wiki/Butterfly">Butterfly/>'); */
+         $('img').attr('src', 'https://www.kasandbox.org/programming-images/animals/butterfly_monarch.png');
+         $('a').attr( 'href', 'https://www.kasandbox.org/programming-images/animals/butterfly_monarch.png' );
+         $('a').text('Butterfly');
+         $('a').append('<ul>') ;
+         $('#p1').addClass('butterfly');
+         $('ul').append('<li>There are more than 20,000 species of butterflies.</li>');
+         $('ul').append('<li>Butterflies have up to 12000 eyes.</li>');
+         $('ul').append('<li>Butterflies live only a few weeks.</li>');
+         $('ul').append('<li>Butterflies use their feet to taste.</li>');
+    </script>
+    </body>
+</html>
